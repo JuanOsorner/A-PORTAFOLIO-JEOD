@@ -1,0 +1,24 @@
+# Entornos virtuales
+venv/
+.env/
+.venv/
+env/
+
+#El archivo
+.env
+
+# Archivos compilados
+__pycache__/
+*.pyc
+
+# Archivos de configuración locales
+*.log
+*.sqlite3
+
+# Achivos json sensibles
+*.json
+
+# Archivos Excel
+*.csv
+*.xlsx
+*.xls
