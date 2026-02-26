@@ -1,0 +1,3 @@
+El MIC_2 va a ser un proyecto de python donde vamos a consumir datos de una API
+externa y vamos a realizar calculos matematicos donde vamos a ofrecer a clientes
+estos calculos

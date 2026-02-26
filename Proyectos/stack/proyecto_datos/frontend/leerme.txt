@@ -1,0 +1,1 @@
+El frontend aún no he decidido con que tecnologia voy a hacerlo. Estoy pensando en usar typescript

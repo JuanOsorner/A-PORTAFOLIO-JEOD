@@ -1,1 +1,0 @@
-// El middleware se va a encargar de la seguridad y validaciones de los datos.
