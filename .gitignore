@@ -1,3 +1,5 @@
+# --- Archivos de python
+
 # Entornos virtuales
 venv/
 .env/
@@ -22,3 +24,17 @@ __pycache__/
 *.csv
 *.xlsx
 *.xls
+
+# --- Archivos de Java 
+
+# Compilados
+*.class
+
+# Maven
+target/
+
+# Logs
+*.log
+
+# Archivos de configuración locales
+**/resources/config.properties
