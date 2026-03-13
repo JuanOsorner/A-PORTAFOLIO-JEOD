@@ -1,7 +1,7 @@
 package logica.comandos;
 
 import data.entities.ModeloUsuario;
-import logica.interfaces.IUsuarioRepositorio; // Usamos la interfaz
+import logica.interfaces.IUsuarioRepositorio;
 import transfer.dtos.UsuarioDTO;
 import transfer.mappers.UsuarioMapper;
 

@@ -1,7 +1,7 @@
 package data.repositories;
 
 import config.DatabaseConfig;
-import data.entities.ModeloUsuario;
+import data.models.ModeloUsuario;
 import logica.interfaces.IUsuarioRepositorio; // Importamos tu interfaz
 import java.sql.*;
 import java.util.ArrayList;

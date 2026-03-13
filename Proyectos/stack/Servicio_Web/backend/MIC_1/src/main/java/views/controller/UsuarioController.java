@@ -1,7 +1,7 @@
 package controllers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import data.models.ModeloUsuario;
+import data.models.ModeloUsuario; // Ver si podemos simplificar mas esto
 import logica.comandos.ComandoUsuario;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

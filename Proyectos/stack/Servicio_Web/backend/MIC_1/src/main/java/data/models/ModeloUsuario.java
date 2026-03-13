@@ -1,4 +1,4 @@
-package data.entities;
+package data.models;
 
 // Hacemos uso de la dependencia lombok para no escribir getters y setters
 import lombok.AllArgsConstructor;
