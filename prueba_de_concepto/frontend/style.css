@@ -1,0 +1,37 @@
+/* frontend/styles.css */
+
+/* 1. Animación suave para la aparición del panel de resultados */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* 2. Efecto de 'Respiración' para la zona Dropzone cuando el archivo está encima */
+@keyframes pulse-soft {
+    0%, 100% { transform: scale(1); border-color: #60a5fa; background-color: #eff6ff; }
+    50% { transform: scale(1.02); border-color: #3b82f6; background-color: #dbeafe; }
+}
+
+.drag-active {
+    animation: pulse-soft 1.5s infinite ease-in-out;
+    border-style: solid !important; /* Cambia de punteado a sólido */
+}
+
+/* 3. Barra de desplazamiento (Scrollbar) elegante para la lista de errores */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
