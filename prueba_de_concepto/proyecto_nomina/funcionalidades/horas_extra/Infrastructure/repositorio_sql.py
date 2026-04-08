@@ -20,7 +20,10 @@ class RepositorioSQL(RepositorioNominaInterface):
             cursor.execute(sql, valores)
             conexion.commit()
 
-    def guardar_error(self, fila_cruda: str, motivo: str):
+    def guardar_error(self, hora_extra: HoraExtra, motivo: str):
+        # Concatenamos el número de línea al motivo para que sea visible en phpMyAdmin
+        motivo_con_fila = f"Fila {hora_extra.numero_linea}: {motivo}"
+        
         sql = """
             INSERT INTO Log_Errores_Nomina 
             (FilaOriginal, MotivoFallo) 
@@ -28,5 +31,5 @@ class RepositorioSQL(RepositorioNominaInterface):
         """
         with ConexionDB() as conexion:
             cursor = conexion.cursor()
-            cursor.execute(sql, (fila_cruda, motivo))
+            cursor.execute(sql, (hora_extra.fila_original, motivo_con_fila))
             conexion.commit()

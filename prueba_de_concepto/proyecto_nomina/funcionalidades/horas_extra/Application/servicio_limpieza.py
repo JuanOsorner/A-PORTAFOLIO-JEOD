@@ -6,15 +6,13 @@ class ServicioNomina:
         self.repositorio = repositorio
 
     def ejecutar(self):
-        # Recibe objetos de dominio listos para ser validados
         novedades = self.lector.obtener_datos()
-        
         for item in novedades:
             try:
-                item.validar() # El dominio decide si es correcto
+                item.validar()
                 self.repositorio.guardar_exitoso(item)
-                print(f"OK: {item.documento}")
+                print(f"✓ OK: Fila {item.numero_linea}")
             except Exception as e:
-                # Si falla el mapeo previo o la validación, va al log
-                self.repositorio.guardar_error(str(item), str(e))
-                print(f"Error: {e}")
+                # Ahora pasamos el objeto 'item' completo
+                self.repositorio.guardar_error(item, str(e))
+                print(f"✗ Error en fila {item.numero_linea}: {e}")

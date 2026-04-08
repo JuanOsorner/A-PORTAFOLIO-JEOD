@@ -9,6 +9,10 @@ class HoraExtra:
     cantidad: Decimal
     fecha_reporte: date
     fila_original: str = ""
+    numero_linea: int = 0
+
+    def __repr__(self):
+        return self.fila_original if self.fila_original else f"Doc: {self.documento}, Tipo: {self.tipo_hora}"
 
     def validar(self):
         """
