@@ -25,13 +25,17 @@ El proyecto fue construido bajo principios de Domain-Driven Design (DDD) e imple
 
 Antes de levantar el servidor, debe existir el esquema de base de datos.
 Ejecute el siguiente comando en su gestor de base de datos:
-CREATE DATABASE pruebanomina;
+
+    CREATE DATABASE pruebanomina;
+
+Si va a usar SQL Server es necesario añadir en el requirements.txt la siguiente libreria: pyodbc
 
 ### 2. Configuración del Backend
 
 Navegue al directorio del backend y configure el entorno virtual:
 cd backend
-python -m venv venv
+
+    python -m venv venv
 
 Active el entorno virtual:
 
@@ -39,7 +43,8 @@ Active el entorno virtual:
 - En macOS/Linux: source venv/bin/activate
 
 Instale las dependencias:
-pip install -r requirements.txt
+
+    pip install -r requirements.txt
 
 Asegúrese de que el archivo `.env` en el directorio `backend` tenga la cadena de conexión correcta:
 DATABASE_URL=mysql+mysqlconnector://root:@localhost/pruebanomina
