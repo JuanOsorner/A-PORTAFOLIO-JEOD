@@ -42,6 +42,10 @@ Active el entorno virtual:
 - En Windows: venv\Scripts\activate
 - En macOS/Linux: source venv/bin/activate
 
+Añada el .env en la raiz del backend en la ruta: 
+
+    prueba_de_concepto\backend
+
 Instale las dependencias:
 
     pip install -r requirements.txt
